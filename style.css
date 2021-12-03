@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Helvetica', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: url(images/background-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 78%;
+    min-height: calc(100vh - 280px);
+
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+
+    border-radius: 20px;
+
+    padding: 50px;
+}
