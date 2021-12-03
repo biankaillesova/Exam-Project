@@ -89,3 +89,75 @@ nav ul li a:hover {
     color:#fff;
     border-radius: 20px;
 }
+
+.content {
+    transform: translateX(-100px);
+    max-width: 550px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    
+    border-radius: 20px;
+
+    padding: 40px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+.content h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.75em;
+
+    margin-bottom: 40px;
+
+    color: #006465;
+}
+
+.content p{
+    font-family: Helvetica, sans-serif; 
+    font-size: 1.05em;
+
+    color: #006465;
+}
+
+.content a {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: #fff;
+    color: #006465;
+
+    margin-top: 40px;
+    border-radius: 30px;
+
+    font-size: 1.05em;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content a:hover {
+    background: #006465;
+    color:#fff;
+    transition: 0.6s;
+}
+
+.imgcan {  
+    animation: animate 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+
+.imgcan{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcan img {
+    width: 500px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    opacity: 100%;
+}
