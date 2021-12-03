@@ -41,6 +41,22 @@
             <div class="imgcan">
                 <img src="images/lemon_pineapple-01.png">
             </div>
+
+            <!-- JS Tilt Effect -->
+            <script src="images/vanilla-tilt.js"></script>
+            <script>
+                VanillaTilt.init(document.querySelector(".content"), {
+                max: 5,
+                speed: 300
+                });
+            </script>
+ 
+            <script>
+                VanillaTilt.init(document.querySelector(".imgcan"), {
+                max: 5,
+                speed: 300
+                });
+            </script>  
         </main>
     </section>
 </body>
