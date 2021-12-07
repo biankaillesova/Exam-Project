@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickwick Tea</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <meta name="keywords"
         content="Pickwick, tea, black tea, green tea, fruit tea, recipes, tea recipes">
@@ -36,14 +36,44 @@
 
             </nav>
 
-            <ul class="some">
-                <li><a href="https://www.facebook.com/pickwick"><img src="images/facebook-app-symbol.png"></a></li>
-                <li><a href="https://www.instagram.com/pickwicknl/"><img src="images/instagram.png"></a></li>
-            </ul>
+            <!-- I want to put filters for different types of tea -->
+            <section class="width1">
+                <ul class="filters"> 
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="fruit">Fruit</li>
+                    <li class="list" data-filter="black">Black</li>
+                    <li class="list" data-filter="green">Green</li>
+                    <li class="list" data-filter="herbal">Herbal</li>
+                </ul>
+            </section>
+
+            <!-- Added a bit of Java for the filers to become real -->
+            <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+            
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.list').click(function(){
+                        const value = $(this).attr('data-filter');
+                        if (value == 'all'){
+                            $('.card').show('1000');
+                        }
+                        else {
+                            $('.card').not('.'+value).hide('1000');
+                            $('.card').filter('.'+value).show('1000');
+                        }
+                    })
+
+                    $('.list').click(function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                    })
+                })
+            </script>
+
+            <!-- Now let's make flex-box with all the products -->
 
             <section class="products">
                 
-                <section class="card">
+                <section class="card fruit">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -55,7 +85,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card herbal">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -67,7 +97,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card green">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -79,7 +109,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card black">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -91,7 +121,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card fruit">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -103,7 +133,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card herbal">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -115,7 +145,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card herbal">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -127,7 +157,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card fruit">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -139,7 +169,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card green">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -151,7 +181,7 @@
                     </div>
                 </section>
 
-                <section class="card">
+                <section class="card black">
                     <div class="imgbx">
                         <img src="images/can-01.png" alt="can1">
                     </div>
@@ -164,7 +194,6 @@
                 </section>
 
             </section>
-
         </main>
     </section>
 </body>

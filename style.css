@@ -19,7 +19,8 @@
 }
 
 main {
-    position: relative;
+    position: absolute;
+    top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +29,7 @@ main {
     margin-top: 40px; 
 
     width: 78%;
-    height: 600px;
+    height: 640px;
 
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
@@ -219,6 +220,8 @@ nav .navlinks li a:hover, .active {
 }
 
 .products {
+    position: absolute;
+    top: 130px;
     display: flex;
 
     width: 100%;
@@ -232,7 +235,7 @@ nav .navlinks li a:hover, .active {
 .card {
     position: relative;
 
-    margin: 10px;
+    margin: 12px;
 
     width: 200px;
     height: 270px;
@@ -280,7 +283,7 @@ nav .navlinks li a:hover, .active {
 
 .card:hover .imgbx img {
     max-width: 50%;
-    transform: rotate(-18deg);
+    transform: rotate(-19deg);
 }
 
 .contentbx {
@@ -351,4 +354,40 @@ nav .navlinks li a:hover, .active {
     color: white;
 }
 
+.width1 {
+    width: 100%;
+    display: flex;
+
+    position: absolute;
+    top: 60px;
+}
+
+.filters {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.filters li {
+    list-style: none;
+
+    background: #fff;
+    color:#006465;
+
+    padding: 12px 24px;
+    margin: 10px;
+
+    border-radius: 30px;
+
+    font-size: 1.05em;
+    font-weight: 500;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+}
+
+.width1 ul li.active {
+    background: #006465;
+    color:#fff;
+}
 
