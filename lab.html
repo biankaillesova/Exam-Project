@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickwick Tea</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="keywords"
+        content="Pickwick, tea, black tea, green tea, fruit tea, recipes, tea recipes">
+    <meta name="description" content="Pickwick Tea">
+
+    <!-- Ubuntu font - Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section">
+
+        <main>
+            <nav>
+                <a href="index.html"><img src="images/logo-01.png" class="Logo"></a>
+
+                <ul class="navlinks">
+                    <li><a href="ourtea.html" class="active">OUR TEA</a></li>
+                    <li><a href="mixyourtea.html">MIX YOUR TEA</a></li>
+                    <li><a href="summer.html">SUMMER RECIPES</a></li>
+                    <li><a href="winter.html">WINTER RECIPES</a></li>
+                </ul>
+
+                <a href="index.html"><img src="images/shopping-cart.png" class="shoppingcart"></a></li>
+
+            </nav>
+
+            <ul class="some">
+                <li><a href="https://www.facebook.com/pickwick"><img src="images/facebook-app-symbol.png"></a></li>
+                <li><a href="https://www.instagram.com/pickwicknl/"><img src="images/instagram.png"></a></li>
+            </ul>
+
+            <section class="width1">
+                <ul class="filters"> 
+                    <li class="list" data-filter="all">All</li>
+                    <li class="list" data-filter="fruit">Fruit</li>
+                    <li class="list" data-filter="black">Black</li>
+                    <li class="list" data-filter="green">Green</li>
+                    <li class="list" data-filter="herbal">Herbal</li>
+                </ul>
+            </section>
+
+            <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+            
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.list').click(function(){
+                        const value = $(this).attr('data-filter');
+                        if (value == 'all'){
+                            $('.card').show('1000');
+                        }
+                        else {
+                            $('.card').not('.'+value).hide('1000');
+                            $('.card').filter('.'+value).show('1000');
+                        }
+                    })
+                })
+            </script>
+
+            <section class="products">
+                
+                <section class="card fruit">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Pineapple &#38 Lemon</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card herbal">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Chamomile</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card green">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Green Tea Variation</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card black">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Earl Grey</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card fruit">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Forest Fruit</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card herbal">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Rosehip</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card herbal">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Mint</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card fruit">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Peach &#38 Strawberry</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card green">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Green Tea</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+                <section class="card black">
+                    <div class="imgbx">
+                        <img src="images/can-01.png" alt="can1">
+                    </div>
+
+                    <div class="contentbx">
+                        <h3>Earl Grey Original</h3>
+                        <h2 class="price">0.69&#8364</h2>
+                        <a href="#" class="buy">Buy Now</a>
+                    </div>
+                </section>
+
+            </section>
+
+        </main>
+    </section>
+</body>
