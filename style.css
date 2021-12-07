@@ -5,7 +5,7 @@
     font-family: 'Helvetica', sans-serif;
 }
 
-section {
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ main {
     margin-top: 40px; 
 
     width: 78%;
-    min-height: calc(100vh - 320px);
+    height: 600px;
 
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
@@ -90,10 +90,10 @@ nav .navlinks li a {
     padding: 8px 15px;
 }
 
-nav .navlinks li a:hover {
-    background: #006465;
-    color:#fff;
+nav .navlinks li a:hover, .active {
+    background: #fff;
     border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .shoppingcart {
@@ -154,12 +154,14 @@ nav .navlinks li a:hover {
 .content a:hover {
     background: #006465;
     color:#fff;
+
     transition: 0.6s;
 }
 
 
 .imgcan{
     width: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +169,7 @@ nav .navlinks li a:hover {
 
 .imgcan img {
     width: 500px;
+
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     opacity: 100%;
 }
@@ -174,6 +177,7 @@ nav .navlinks li a:hover {
 .some{
     position: absolute;
     right: -22.5px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,13 +190,18 @@ nav .navlinks li a:hover {
 
 .some li a {
     text-decoration: none;
+
     width: 45px;
     height: 45px;
+
     background: #fff;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     border-radius: 50%;
+
     margin: 5px 0px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
 }
@@ -200,6 +209,7 @@ nav .navlinks li a:hover {
 .some li a img{
     width: 25px;
     height: 25px;
+
     transform: scale(0.8);
     transition: 1s;
 }
@@ -207,4 +217,138 @@ nav .navlinks li a:hover {
 .some li:hover a img {
     transform: scale(0.8) rotate(360deg);
 }
+
+.products {
+    display: flex;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+
+    margin: 10px;
+
+    width: 200px;
+    height: 270px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.card::before {
+    content: "" ;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #006465;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg); 
+}
+
+.imgbx {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+.imgbx img {
+    width: 150px;
+    transition: 0.5s;
+}
+
+.card:hover .imgbx img {
+    max-width: 50%;
+    transform: rotate(-18deg);
+}
+
+.contentbx {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 15px;
+
+    z-index: 1;
+}
+
+.contentbx h3 {
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+
+    color:#006465;
+}
+
+.contentbx h2 {
+    margin-top: 10px;
+
+    top: 200px;
+    opacity: 0;
+
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+
+    color:#006465;
+}
+
+.card:hover .contentbx h2, .card:hover .contentbx .buy {
+    top: 0px;
+    opacity: 1;
+}
+
+.contentbx .buy {
+    margin-top: 8px;
+
+    top: 200px;
+    opacity: 0;
+
+    font-size: 15px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+
+    background: #fff;
+    color: #006465;
+
+    border-radius: 30px;
+    padding: 8px 20px;
+
+    text-decoration: none;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.5s;
+}
+
+.contentbx .buy:hover {
+    background: #006465;
+    color: white;
+}
+
 
