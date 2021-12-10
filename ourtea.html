@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickwick Tea</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <meta name="keywords"
         content="Pickwick, tea, black tea, green tea, fruit tea, recipes, tea recipes">
@@ -19,14 +19,17 @@
 </head>
 
 <body>
-    <section class="section">
+    <section class="sectiontea">
 
-        <main>
+        <main class="maintea">
+
             <nav>
+                <input id="nav-toggle" type="checkbox">
+
                 <a href="index.html"><img src="images/logo-01.png" class="Logo"></a>
 
                 <ul class="navlinks">
-                    <li><a href="ourtea.html" class="active">OUR TEA</a></li>
+                    <li><a href="ourtea.html">OUR TEA</a></li>
                     <li><a href="mixyourtea.html">MIX YOUR TEA</a></li>
                     <li><a href="summer.html">SUMMER RECIPES</a></li>
                     <li><a href="winter.html">WINTER RECIPES</a></li>
@@ -34,6 +37,11 @@
 
                 <a href="index.html"><img src="images/shopping-cart.png" class="shoppingcart"></a></li>
 
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
             </nav>
 
             <!-- I want to put filters for different types of tea -->
