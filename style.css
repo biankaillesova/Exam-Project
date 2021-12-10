@@ -439,6 +439,7 @@ nav .icon-burger .line {
     }
 
     main {   
+        top: 15px;
         flex-direction: column;
         height: 85vh;
         padding: 20px;
@@ -447,10 +448,22 @@ nav .icon-burger .line {
     .content {
         transform: translateX(0px);
         max-width: 100%;
-        padding: 30px;
+        padding: 25px;
         margin-top: 30px;
         height: 360px;
         text-align: center;
+    }
+
+    .content h2 {
+        font-size: 1.35em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .content a {
+        font-size: 1em;
     }
 
     nav {
@@ -539,14 +552,61 @@ nav .icon-burger .line {
 }
 
 @media (max-width: 375px){
+    main {
+        top: 10px;
+    }
+    
+    .content {
+        height: 280px ;
+    }
     .imgcan2 img {
         width: 300px;
+    }
+
+    .some li a {
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .section {
+    height: 105vh;
+    }
+
+    .content {
+        padding: 10px;
+    }
+    
+    .imgcan2 img {
+        margin-top: 12px;
+        width: 250px;
+    }
+
+    .some li a {
+        margin: 0px 10px;
     }
 }
 
 @media (min-width: 600px){
     .imgcan2 img {
         width: 500px;
+    }
+}
+
+@media (min-width: 700px){
+    .content {
+        margin-top: 90px;
+        width: 500px;
+        padding: 25px;
+        height: 250px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+    
+    .content p {
+        font-size: 1.05em;
     }
 }
  
