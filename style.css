@@ -540,10 +540,8 @@ nav .icon-burger .line {
     position: relative;
     top: 120px;
 
-    width: 170px;
+    width: 160px;
 }
-
-
 
 @media (max-width: 992px){
     .section {

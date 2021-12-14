@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickwick Tea</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="keywords"
+        content="Pickwick, tea, black tea, green tea, fruit tea, recipes, tea recipes">
+    <meta name="description" content="Pickwick Tea">
+
+    <!-- Ubuntu font - Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section">
+        <main>
+            <nav>
+                <input id="nav-toggle" type="checkbox">
+
+                <a href="index.html"><img src="images/logo-01.png" class="Logo"></a>
+
+                <ul class="navlinks">
+                    <li><a href="ourtea.html">OUR TEA</a></li>
+                    <li><a href="mixyourtea.html">MIX YOUR TEA</a></li>
+                    <li><a href="summer.html">SUMMER RECIPES</a></li>
+                    <li><a href="winter.html">WINTER RECIPES</a></li>
+                </ul>
+
+                <a href="index.html"><img src="images/shopping-cart.png" class="shoppingcart"></a></li>
+
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+
+            <h2 class="recipetitle">Inspire yourself with Pickwick Winter Recipes</h2>
+
+            <section class="recipe">
+
+                <div class="recipeleft">
+                    <img src="images/pineapplepunch.png" alt="pineapplepunch.jpg" class="img-responsive">
+                </div>
+
+                <div class="reciperight">
+                    <h2 class="recipesubtitle">Pineapple &#38; Lemon - Pineapple Punch</h2>
+
+                    <a class="tablinks" onclick="openTab(event, 'Ingredients')" href="#">Ingredients</a>
+                    <a class="tablinks active" onclick="openTab(event, 'Procedure')" href="#">Procedure</a>
+
+                    <div id="Ingredients" class="tabcontent" style="display: block;">
+                        <h3 style="text-align: center;" class="recipetype">Ingredients</h3>
+                        <p style="text-align: center; margin-top: 10px;"> 4 bags of Pickwick Pineapple & Lemon tea<br>
+                            2 nails<br>
+                            1 cinnamon roll<br>
+                            1 anise star<br>
+                            peel and juice of 2 lemons<br>
+                            1⁄2 diced pineapple<br>
+                            1-2 tablespoons of cane sugar<br>
+                            1 liter of water<br>
+                            condensed milk to taste<br>
+                        </p>
+                    </div>
+
+                    <div id="Procedure" class="tabcontent" style="display: none;" class="recipetype">
+                        <h3 style="text-align: center;">Procedure</h3>
+                        <p style="text-align: center; padding-left: 40px; padding-right: 40px; margin-top: 10px; margin-bottom: 19px;">Grate the peel of 1 lemon, but only the yellow layer - the white flesh is bitter. Put it together with the spices in a pot and heat slightly so that the spices ring. Add diced pineapple and pour 1 liter of water. After 10 minutes of cooking, lightly squeeze the pineapple with a fork to release the juice. Add 4 bags of Pickwick Pineapple & Lemon tea and leave to infuse for about 5 minutes. Add lemon juice and cane sugar to taste. Pineapple punch will taste even more exotic if you add coconut milk or rum to it according to your taste.</p>
+                    </div>
+
+                    <img src="images/imgrecipesummer.png" alt="Earl Grey IceTea with Peaches" class="img-recipe">
+
+                    <script type="text/javascript">// <![CDATA[
+                        function openTab(evt, tabName) {
+                            // Declare all variables
+                            var i, tabcontent, tablinks;
+                        
+                            // Get all elements with class="tabcontent" and hide them
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                        
+                            // Get all elements with class="tablinks" and remove the class "active"
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                        
+                            // Show the current tab, and add an "active" class to the link that opened the tab
+                            document.getElementById(tabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                        // ]]>
+                    </script>
+                   
+                </div>
+            </section>
+        </main>
+    </section>
+</body>
