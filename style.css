@@ -546,7 +546,7 @@ nav .icon-burger .line {
     transform: rotate(-18.5deg);
 }
 
-.procedure-p-summer {
+.procedure-p-summer, .procedure-p-winter{
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -554,15 +554,27 @@ nav .icon-burger .line {
     margin-bottom: 77px;
 }
 
-.procedure-p-winter{
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 10px;
-    margin-bottom: 19px;
-}
-
 @media (max-width: 992px){
+    .mixleft {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .bigimg {
+        width: 80%;
+    }
+    
+    .smallimggroup {
+        width: 20%;
+        flex-wrap: wrap;
+    }
+
+    .contentbx a {
+        display: none;
+    }
+
     .section {
         padding: 50px 10px 10px;
         height: 100vh;
@@ -576,11 +588,19 @@ nav .icon-burger .line {
         height: 155vh;
     }
 
+    .sectionindex {
+        height: 91vh;
+    }
+
     main {   
         top: 15px;
         flex-direction: column;
         height: 85vh;
         padding: 20px;
+    }
+    
+    .mainmix {
+        padding: 30px;
     }
 
     .mainsummer {
@@ -592,6 +612,7 @@ nav .icon-burger .line {
     }
 
     .content {
+        top: 10px;
         transform: translateX(0px);
         max-width: 100%;
         padding: 25px;
@@ -750,7 +771,7 @@ nav .icon-burger .line {
       text-align: center; 
       font-size: 1.3em; 
       
-      width: 90%;
+      width: 100%;
     }
 
     .recipesubtitle {
@@ -777,7 +798,7 @@ nav .icon-burger .line {
         justify-content: center;
         align-items: center;
 
-        background:none;
+        background:  none;
         box-shadow: none;
     }
 
@@ -856,6 +877,10 @@ nav .icon-burger .line {
 
     .content {
         padding: 10px;
+    }
+
+    .navlinks {
+        height: 110vh;
     }
     
     .imgcan2 img {
@@ -1052,7 +1077,8 @@ nav .icon-burger .line {
     border-radius: 30px;
 
     font-size: 1.05em;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Helvetica', 'sans serif' ;
 
     text-decoration: none;
 
@@ -1060,8 +1086,8 @@ nav .icon-burger .line {
 }
 
 .mixright a:hover {
-    background: #006465;
-    color:#fff;
+    background: rgba(255, 255, 255, 0.5);
+    color: #006465;
 
     transition: 0.6s;
 }
