@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 145vh;
 
     background: url(images/bg.png);
     background-size: cover;
@@ -554,42 +554,175 @@ nav .icon-burger .line {
     margin-bottom: 77px;
 }
 
+footer {
+    position: absolute;
+    top: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #006465;
+
+    width: 85%;
+    height: 40vh ;
+
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #006465;
+}
+
+.footerbeg {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footerbeg img {
+    width: 140px;
+}
+
+.footerparts {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: lighter;
+}
+
+.footerpart {
+    width: 24%;
+}
+.footerend {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footerbold {
+    font-family: 'Ubuntu', 'sans-serif';
+    font-weight: 600;
+}
+
+.halfone, .halftwo {
+    display: flex;
+}
+
 @media (max-width: 992px){
     .mixleft {
-        display: flex;
+        display: block;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
-        
+        top: -30px;
     }
 
     .bigimg {
-        width: 80%;
+        width: 100%;
+    }
+    
+    #MainImg {
+        width: 100%;
     }
     
     .smallimggroup {
-        width: 20%;
-        flex-wrap: wrap;
+        width: 100%;
+        flex-wrap: column;
+    }
+
+    .small-img {
+        margin-top: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .mixright {
+        margin-left: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .mixright h2, .mixright h3, .mixright p  {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .mixright h2 {
+        font-size: 28px;
+    }
+
+    .mixright p {
+        font-size: 19px;
+    }
+
+    .base{
+        position: relative;
+        left: 40px;
+    }    
+
+    .mixright a {
+        position: relative;
+        left: 30px;
     }
 
     .contentbx a {
         display: none;
     }
 
+    footer {
+        height: 110vh;
+        width: 87%;
+        text-align: center;
+    }
+
+    .footerparts {
+        display: block;
+        width: 100%;
+        margin-top: 60px;
+       
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .footerpart {
+        width: 100%;
+    }
+
+    .footerbeg img {
+       width: 40%;
+    }
+
+    .footerend {
+        margin-top: 60px;
+        font-size: 19px;
+    }
+
+    .footerpart {
+        margin-bottom: 30px;
+    }
+
     .section {
         padding: 50px 10px 10px;
-        height: 100vh;
     }
 
     .sectionsummer {
-        height: 155vh;
+        height: 260vh;
     }
 
     .sectionwinter {
-        height: 155vh;
+        height: 265vh;
     }
 
     .sectionindex {
-        height: 91vh;
+        height: 205vh;
+    }
+
+    .sectionmix {
+        height: 315vh;
     }
 
     main {   
@@ -600,15 +733,31 @@ nav .icon-burger .line {
     }
     
     .mainmix {
-        padding: 30px;
+        height: 195vh;
     }
 
     .mainsummer {
         height: 140vh;
     }
 
+    .footersummer {
+        top: 155vh;
+    }
+
+    .footerwinter {
+        top: 160vh;
+    }
+
     .mainwinter {
         height: 145vh;
+    }
+
+    .footerourtea {
+        top: 185vh;
+    }
+
+    .footermix {
+        top: 210vh;
     }
 
     .content {
@@ -718,7 +867,7 @@ nav .icon-burger .line {
     }
 
     .filters {
-        justify-content: space-between;
+        display: block;
         margin-left: 20px;
     }
 
@@ -731,6 +880,7 @@ nav .icon-burger .line {
     }
 
     .products {
+        margin-top: 40px;
         justify-content: center;
     }
 
@@ -760,7 +910,7 @@ nav .icon-burger .line {
     }
 
     .sectiontea {
-        height: 190vh;
+        height: 290vh;
     }
 
     .maintea {
@@ -769,7 +919,7 @@ nav .icon-burger .line {
 
     .recipetitle {
       text-align: center; 
-      font-size: 1.3em; 
+      font-size: 1.2em; 
       
       width: 100%;
     }
@@ -787,6 +937,7 @@ nav .icon-burger .line {
     .recipe {
         flex-wrap: wrap;
         display: block;
+      
 
         position: relative;
         top: 150px;
@@ -828,6 +979,18 @@ nav .icon-burger .line {
 }
 
 @media (max-width: 375px){
+    .mixright {
+        margin-left: 0px;
+    }
+
+    .base {
+        left: 45px;
+    }
+
+    .mixright a {
+        left: 35px;
+    }
+
     main {
         top: 10px;
     }
@@ -859,14 +1022,51 @@ nav .icon-burger .line {
         height: 150vh;
     }
 
+    .mainmix {
+        height: 210vh;
+    }
+
     .sectionwinter {
         height: 160vh;
     }
 
     .sectiontea {
-        height: 180vh;
+        height: 295vh;
     }
 
+    .sectionindex {
+        height: 210vh;
+    }
+
+    .footerourtea, .footerindex {
+        height: 115vh;
+    }
+
+    .footersummer {
+        top: 160vh;
+        height: 115vh;
+    }
+
+    .footerwinter {
+        top: 166.5vh;
+        height: 115vh;
+    }
+
+    .footermix {
+        top: 226vh;
+    }
+
+    .sectionsummer {
+        height: 270vh;
+    }
+
+    .sectionmix {
+        height: 330vh;
+    }
+
+    .sectionwinter {
+        height: 275vh;
+    }
 }
 
 
