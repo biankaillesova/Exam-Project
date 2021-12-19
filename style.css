@@ -631,7 +631,6 @@ footer a {
     
     .smallimggroup {
         width: 100%;
-        flex-wrap: column;
     }
 
     .small-img {
